@@ -31,10 +31,10 @@ $ npm run test:cov
 ```
 
 ## Reset password
-In this function, I use nodemailer + cache manager to handle
-when the user sends a valid email, the server will send an OTP code used to confirm. OTP code will be random and is valid for 5 minutes. If exceed 5 minutes, it will be removed.
-In handling, I use nodemailer to send mail and auth by gmail of google
-I use cache manager to store key-value (email-otpcode). It will expire in 5 minutes. When I use it to check a valid OTP.
+//In this function, I use nodemailer + cache manager to handle.
+//when the user sends a valid email, the server will send an OTP code used to confirm. OTP code will be random and is valid for 5 minutes. If exceed 5 minutes, it will be removed.
+//In handling, I use nodemailer to send mail and auth by gmail of google
+//I use cache manager to store key-value (email-otpcode). It will expire in 5 minutes. When I use it to check a valid OTP.
 ```bash
 URL: auth/forget-password -> auth/forget-password/confirm -> auth/forget-password/reset
 # auth/forget-password

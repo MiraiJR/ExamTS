@@ -1,0 +1,46 @@
+[
+    {
+        "subject": "TOÁN",
+        "code": "TOAN"
+    },
+    {
+        "subject": "LÝ",
+        "code": "LY"
+    },
+    {
+        "subject": "HÓA",
+        "code": "HOA"
+    },
+    {
+        "subject": "SINH",
+        "code": "SINH"
+    },
+    {
+        "subject": "SỬ",
+        "code": "SU"
+    },
+    {
+        "subject": "ĐỊA",
+        "code": "DIA"
+    },
+    {
+        "subject": "GIÁO DỤC CÔNG DÂN",
+        "code": "GDCD"
+    },
+    {
+        "subject": "CÔNG NGHỆ",
+        "code": "CN"
+    },
+    {
+        "subject": "ANH VĂN",
+        "code": "AVAN"
+    },
+    {
+        "subject": "NGỮ VĂN",
+        "code": "NVAN"
+    },
+    {
+        "subject": "TIN HỌC",
+        "code": "THOC"
+    }
+]

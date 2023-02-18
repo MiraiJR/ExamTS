@@ -56,7 +56,7 @@ export class AuthService {
             success: true,
             msg: "Login successfully!",
             access_token: this.jwtService.sign(payload, {
-                expiresIn: "60s",
+                expiresIn: "2h",
                 secret: process.env.JWT_SECRET_KEY
             }), // jwt token,
             refreshToken: refreshToken,

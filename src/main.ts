@@ -7,8 +7,6 @@ async function bootstrap() {
   const PORT = 3000;
   app.use(session({
     secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
   }))
   await app.listen(PORT, () => {
     console.log(`Server is listenning in port ${PORT}`);

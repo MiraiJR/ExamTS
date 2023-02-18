@@ -75,9 +75,4 @@ export class UserController {
       })
     }
   }
-
-  @Post("checker")
-  async checkEmail(@Body('email') email: string) {
-    
-  }
 }

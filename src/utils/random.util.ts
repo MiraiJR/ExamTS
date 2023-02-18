@@ -1,8 +1,6 @@
-import { Injectable } from "@nestjs/common";
 import { createReadStream, readFile, readFileSync } from "fs";
 import { join } from "path";
 
-@Injectable()
 export class RandomService {
     constructor(
     ) {
@@ -23,11 +21,9 @@ export class RandomService {
         return result;
     }
 
-
-    // 
-    randomIdExam(): string {
-        let result: string = "";
-
+    randomCodeExam(subject: string): string {
+        let result: string = this.getCodeSubject(subject);
+        result += this.randomOTPresetPwd(4);
 
         return result;
     }

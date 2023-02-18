@@ -5,9 +5,10 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { AuthModule } from './auth/auth.module';
 import * as redisStore from 'cache-manager-redis-store';
+import { ExamModule } from './exams/exam.module';
 
 @Module({
-  imports: [UsersModule, AuthModule, ConfigModule.forRoot({
+  imports: [UsersModule, AuthModule, ExamModule, ConfigModule.forRoot({
     isGlobal: true,
     cache: true,
   }), TypeOrmModule.forRoot({

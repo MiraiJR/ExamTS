@@ -29,6 +29,11 @@ export class User {
 
     @Column()
     gender: boolean;
+
+    @Column({
+        nullable: true
+    })
+    avatar: string;
     
     @Column({ type: "timestamp", default: () => "now()"})
     createdAt: Date;

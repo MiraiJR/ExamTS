@@ -1,7 +1,5 @@
-import { Injectable } from "@nestjs/common";
 import * as Nodemailer from "nodemailer";
 
-@Injectable()
 export class MailService {
     async sendMail(email: string, title: string, content: string): Promise<Boolean> {
         let transporter = Nodemailer.createTransport({

@@ -15,7 +15,6 @@ export class UsersService {
   ) { }
 
   findAll(): Promise<User[]> {
-    this.randomService.randomIdExam();
     return this.usersRepository.find();
   }
 

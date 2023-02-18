@@ -1,10 +1,10 @@
-import { IsArray, IsDateString, IsEnum, IsNotEmpty, IsNumber } from "class-validator";
+import { IsArray, IsDateString, IsEnum, IsNotEmpty, IsNumber, IsNumberString } from "class-validator";
 
 export class CreateExamDTO {
     @IsNotEmpty()
     subject: string;
 
-    @IsNumber()
+    @IsNumberString()
     grade: number;
 
     @IsNotEmpty()
@@ -13,12 +13,12 @@ export class CreateExamDTO {
     @IsNotEmpty()
     schoolName: string;
 
-    @IsDateString()
+    @IsNotEmpty()
     startedAt: Date;
 
-    @IsDateString()
+    @IsNotEmpty()
     finishedAt: Date;
 
-    @IsArray()
-    listEmail: Array<string>;
+    // @IsArray()
+    // listEmail: Array<string>;
 }

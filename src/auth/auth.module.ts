@@ -18,9 +18,10 @@ import { MailService } from "src/utils/mail.util";
         load: [configuration]
     }), JwtModule.register({
         secret: "",
-    }), CacheModule.register()],
+    }), CacheModule.register(), UsersModule],
     controllers: [AuthController],
-    providers: [AuthService, HashService, UsersService, RandomService, MailService],
+    providers: [AuthService, HashService, RandomService, MailService],
+    exports: [AuthService]
 })
 export class AuthModule {
 

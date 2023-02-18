@@ -27,12 +27,12 @@ export class Exam {
     @Column()
     finishedAt: Date;
 
-    @Column()
-    listEmail: Array<string>;
+    @Column("jsonb")
+    listEmail: object[];
 
     @Column()
     @OneToOne(() => User, (user) => user.id)
-    createdBy: User;
+    createdBy: number;
 
     @Column({ type: "timestamp", default: () => "now()"})
     createdAt: Date;
